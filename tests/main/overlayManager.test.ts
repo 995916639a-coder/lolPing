@@ -44,7 +44,7 @@ vi.mock('electron', async () => {
 });
 
 vi.mock('../../src/main/paths', () => ({
-  IS_MAC: false,
+  IS_MAC: false, IS_LINUX: false,
   loadPage: () => Promise.resolve(),
   preloadPath: () => 'preload.js',
 }));
